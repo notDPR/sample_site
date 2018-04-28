@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SLICK_JS</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto:500,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:200,300,400" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="main.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Quicksand:500,700" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/formjs/1.1.1/formjs.min.css">
+	<link rel="stylesheet" type="text/css" href="modal_formjs/modal.css">
+
+
+</head>
+
+<body>
+
+<!-- __________________________________________________________________________________________ -->
+
+	<div id="navbar">
+  		<header>
+		    <h2>Sample-Page</h2>
+		    <nav>
+		        <li>Home</li>
+		        <li>Features</li>
+	          	<li>Platforms</li>
+		        <li>Pricing</li>
+	          	<li>Contact</li>
+		    </nav>
+	   	</header>
+	</div>
+
+	<!-- ________________________________________________________________________________________ -->
+
+	<div class="modal" id="mdl">
+		<div class="myform">
+		  	<h3>Already a member? <a href="#">Login here</a></h3>
+		  	<form>
+
+		  	  <div id="firstname">
+                <div id="labels">
+                  <label class="input-label-sm" for="First">First Name*</label>
+                  <label class="formjs-msg-sm" for="First"></label>
+                </div>
+                <input type="text" class="formjs-sm" id="First">
+              </div>
+
+              <div id="lastname">
+                <div id="labels">
+                  <label class="input-label-sm" for="Last">Last Name*</label>
+                  <label class="formjs-msg-sm" for="Last"></label>
+                </div>
+                <input type="text" class="formjs-sm" id="Last">
+              </div>
+
+              <div id="email">
+                <div id="labels">
+                  <label class="input-label-sm" for="Email">Email*</label>
+                  <label class="formjs-msg-sm" for="Email"></label>
+                </div>
+                <input type="text" class="formjs-sm" id="Email">
+              </div>
+
+              <div id="phone">
+                <div id="labels">
+                  <label class="input-label-sm" for="Phone">Phone Number*</label>
+                  <label class="formjs-msg-sm" for="Phone"></label>
+                </div>
+                <input type="text" class="formjs-sm" id="Phone">
+              </div>
+
+              <div id="address">
+                <div id="labels">
+                  <label class="input-label-sm" for="Add">Address*</label>
+                  <label class="formjs-msg-sm" for="Add"></label>
+                </div>
+                <input type="text" class="formjs-sm" id="Add">
+              </div>
+
+              <div id="city">
+                <div id="labels">
+                  <label class="input-label-sm" for="Cit">City*</label>
+                  <label class="formjs-msg-sm" for="Cit"></label>
+                </div>
+                <input type="text" class="formjs-sm" id="Cit">
+              </div>
+
+              <div id="post">
+                <div id="labels">
+                  <label class="input-label-sm" for="Pos">Post/Zip*</label>
+                  <label class="formjs-msg-sm" for="Pos"></label>
+                </div>
+                <input type="text" class="formjs-sm" id="Pos">
+              </div>
+
+              <div id="usertype">
+                <div id="labels">
+                  <label class="input-label-sm" for="Use">User Type*</label>
+                  <label class="formjs-msg-sm" for="Use"></label>
+                </div>
+                <div class="select-group">
+                  <select class="formjs-sm" id="Use">
+                    <option></option>
+                    <option>First option</option>
+                    <option>Second option</option>
+                  </select>
+                </div>
+              </div>  
+
+              <div id="button">
+              		<input id="btn" type="submit" class="formjs formjs-danger" value="Continue">
+              		<label class="formjs-msg-sm"></label>
+              </div>
+
+		  	</form>
+		</div>
+	</div>
+
+
+	<!-- ___________________________________________________________________________________________ -->
+
+
+	<section class="first_page">
+
+		<header>
+		    <h2>Sample-Page</h2>
+		    <nav>
+		        <li>Home</li>
+		        <li>Features</li>
+	          	<li>Platforms</li>
+		        <li>Pricing</li>
+	          	<li>Contact</li>
+		    </nav>
+	   	</header>
+
+	   	<main>
+			<div class="images">
+		        <img src="https://imgur.com/pm219tL.jpg" alt="">
+		        <img src="https://imgur.com/CAwBrxf.jpg" alt="">
+		        <img src="https://imgur.com/4A1tpMW.jpg" alt="">
+		        <img src="https://imgur.com/NVNJXd7.jpg" alt="">
+		  	</div>
+		  	<div class="content">
+		        <div class="title">Sample title</div>
+		        <div class="vanish">
+		        	<div class="tagline">Sample Tag line</div>
+		        	<a id="signup" href="#">SIGN UP</a>
+		        </div>
+		  	</div>
+		</main>
+	</section>
+
+	<section class="second_page">
+		
+		<div class="cntnt_img">
+			<div class="foto">
+				<img src="image.png">
+			</div>
+			<div class="cntnt">
+				<h3>Create a Powerful Sales Platform</h3>
+				<p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+			</div>
+		</div>
+
+	</section>
+
+
+
+<!--___________________________________________________________________________________________________________ -->
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/formjs/1.1.1/formjs.min.js"></script>
+	<script type="text/javascript" src="modal_formjs/modal.js"></script>
+
+  	<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="slick/slick.min.js"></script>
+
+	<script type="text/javascript" src="http://gsgd.co.uk/sandbox/jquery/easing/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="main.js"></script>
+
+</body>
+
+</html>
