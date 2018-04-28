@@ -1,6 +1,7 @@
 .modal{
 	font-family: "Quicksand", serif;
-  box-sizing : border-box ; 
+  box-sizing : border-box ;
+  /*overflow-y:scroll; */
 }
 .formjs, .formjs-sm {
   font-family: "Quicksand", serif;
@@ -103,6 +104,12 @@ form>*{
   }
 }*/
 
+@media screen and (max-width:500px)
+{
+  #firstname, #lastname, #city, #post {
+    flex-basis: 100%;
+  }
+}
 
 
 
