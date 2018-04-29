@@ -7,9 +7,7 @@ $(document).ready(function(){
 		pauseOnHover : false 
 	}) ;
 
-	var y = "-525px" ;
-	if( $(window).width() <= 500 ) y="-640px" ;
-	if( $(window).width() <= 470 ) y="-688px" ;
+	var y =   "-" + ( $(".modal").height() + 30 ) + "px"  ;
 	$(".modal").css({"top":y}) ;
 
 
@@ -57,14 +55,17 @@ $(document).ready(function(){
 
 
 	$(window).resize(function(){
-		if( $(window).width() <= 500 ) y="-640px" ;
-		if( $(window).width() <= 470 ) y="-688px" ;
-		$(".modal").css({"top":y}) ;
+		y =  "-" + ( $(".modal").height() + 30 ) + "px"  ;
+		// $(".modal").css({"top" : y}) ;
+		// if( $(window).width() <= 500 ) y="-640px" ;
+		// if( $(window).width() <= 470 ) y="-688px" ;
+		// if( $(window).width() <=  700) y = "-1135px" ;
+		// $(".modal").css({"top":y}) ;
 	}) ;
 
 	$("#signup").on("click",function(event){
 
-		$(".modal").css({"top" : "13%" , "opacity" : "1"}) ;
+		$(".modal").css({"top" : "7vh" , "opacity" : "1"}) ;
 		$(".first_page,.second_page").css({"filter" : "brightness(70%)"}) ;
 	});
 
@@ -93,15 +94,12 @@ $(document).ready(function(){
 	$(".home,.features").css({"cursor":"pointer"}) ;
 
 
-
 	$(window).scroll(function(){
 		if($(window).scrollTop() < $(window).height() - $("#navbar").height() + 5)
 		{
 			$(".images").css( {top : $(window).scrollTop()} ) ;
 		}
 	}) ;
-
-
 
 
 

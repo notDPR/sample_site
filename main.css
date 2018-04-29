@@ -216,13 +216,15 @@ main .title{
 /*------------------------MODAL-----------------------------------------------------*/
 
 .modal{
-  width: 45%;
+  /*width: 45%;*/
   position: absolute;
   overflow: auto;
-  left: 27.5%;
+ /* left: 27.5%;*/
+  right: 15%;
+  left: 15%;
   z-index: 4 ;
   /*top : -227vw;*/
-  top :-525px;
+  /*top :-525px;*/
   opacity : 0;
   background-color: rgba(0,0,0,0.5) ;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
@@ -233,40 +235,144 @@ main .title{
   transition : filter 0.2s linear ;
 }
 
+.ico{
+  flex-basis : 40%;
+  font-size: 13px;
+}
+.myform{
+    width: 45%;
+    background-color: #f7f7f7;
+    padding: 28px;
+    margin: 0;
+}
+.reservation{
+    width: 45%;
+    display: block;
+    /* padding: 28px; */
+    /*margin: 10px;*/
+    padding-top: 0;
+    margin: 0;
+}
+.reservation img{
+      max-width: 100%;
+}
+
+.reservation div h6{
+  font-size: 13px ;
+  margin-bottom: 0;
+  margin-top: 13px;
+}
+.details{
+  padding : 3px ;
+}
+.details div span{
+  flex-basis : 50%;
+}
+.ico{
+  /*min-width: 30% ;*/
+}
+.ico i{
+  color: #7d7d7d ;
+  font-size: 18px ;
+  padding-right: 9px;
+      position: relative;
+    top: 4px;
+}
+.myform{
+  margin-right: 7.5px ;
+}
+.reservation{
+  color: black ;
+  margin-left: 7.5px ;
+}
+
 
 @media screen and (max-width: 1000px )
 {
   .modal{
-    width : 50%;
-    left: 25% ;
+    /*width : 50%;
+    left: 25% ;*/
   }
   main{
-    padding-left: 25% ;
-    padding-right: 25% ;
+    padding-left: 15% ;
+    padding-right: 15% ;
+  }
+}
+@media screen and (max-width:900px)
+{
+  main{
+    padding-left: 13% ;
+    padding-right: 13% ;
+  }
+  .modal{
+    width: 74%;
+    left: 10%;
+    right: 10%;
+  }
+  .myform,.reservation{
+    width: 44% ;
+  }
+  .ico{
+    font-size: 13px ;
+    flex-basis: 50%;
+  }
+  .reservation div h6 {
+    font-size: 13px;
+  }
+  .details div .ans {
+    font-size: 14px;
   }
 }
 
 @media screen and (max-width: 800px)
 {
   .modal{
-    width: 60% ;
-    left :20%;
+    width: 80% ;
+    left :10%;
+    /*right: 20% ;*/
   }
   main{
-    padding-left: 20% ;
-    padding-right: 20% ;
+    padding-left: 10% ;
+    padding-right: 10% ;
+  }
+}
+
+@media screen and (max-width: 700px)
+{
+  .modal{
+    flex-wrap: wrap;
+    /*top:-1135px ;*/
+    /*top: -1138px;*/
+  }
+  .myform{
+    margin-right: 0 ;
+  }
+  .reservation{
+    margin-left: 0 ;
+  }
+  .details div span {
+    flex-basis: 40%;
+  }
+  .myform{
+    flex-basis: 100%;
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+  .reservation{
+    flex-basis: 100%;
+    margin-left: 0
   }
 }
 
 @media screen and (max-width: 600px)
 {
   .modal{
-    width: 70% ;
-    left :15%;
+    /*width: 70% ;
+    left :15%;*/
   }
   main{
-    padding-left: 15% ;
-    padding-right: 15% ;
+  /*  padding-left: 15% ;
+    padding-right: 15% ;*/
   }
 }
 
@@ -276,14 +382,14 @@ main .title{
     flex-basis: 100%;
   }
   .modal{
-    top: -640px ;
+    /*top: -640px ;*/
   }
 }
 
 @media screen and (max-width: 470px)
 {
   .modal{
-    top: -688px ;
+    /*top: -688px ;*/
   }
 }
 
@@ -418,4 +524,12 @@ main .title{
 
 .second_page{
   position: relative;
+}
+
+.modal{
+  background : white ;
+}
+.reservation div{
+  padding: 5px;
+  padding-top: 0;
 }
