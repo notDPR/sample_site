@@ -7,9 +7,10 @@ $(document).ready(function(){
 		pauseOnHover : false 
 	}) ;
 
+	$(".ico").find("i").css("cursor","default") ;
+
 	var y =   "-" + ( $(".modal").height() + 30 ) + "px"  ;
 	$(".modal").css({"top":y}) ;
-
 
 // --------------TRIGGER EVENTS-------------------------
 
@@ -53,14 +54,9 @@ $(document).ready(function(){
 		}
 	});
 
-
 	$(window).resize(function(){
 		y =  "-" + ( $(".modal").height() + 30 ) + "px"  ;
 		$(".modal").css({"top" : y}) ;
-		// if( $(window).width() <= 500 ) y="-640px" ;
-		// if( $(window).width() <= 470 ) y="-688px" ;
-		// if( $(window).width() <=  700) y = "-1135px" ;
-		// $(".modal").css({"top":y}) ;
 	}) ;
 
 	$("#signup").on("click",function(event){
@@ -92,7 +88,6 @@ $(document).ready(function(){
 	});
 
 	$(".home,.features").css({"cursor":"pointer"}) ;
-
 
 	$(window).scroll(function(){
 		if($(window).scrollTop() < $(window).height() - $("#navbar").height() + 5)

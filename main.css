@@ -38,7 +38,6 @@ main .images img{
 }
 .first_page header {
   box-sizing: border-box;
-  /*width : 97.9vw ;*/
   width : 100% ;
   z-index : 1 ;
   position : absolute ;
@@ -64,9 +63,7 @@ main .images{
   z-index : -1 ;
   top : 0 ;
   left : 0 ;
-/*   filter: grayscale(50%) ; */
-/*   filter: blur(1px) ; */
-      filter: brightness(80%);
+  filter: brightness(80%);
 }
 main{
   text-align : center ;
@@ -74,7 +71,6 @@ main{
   margin : 0;
   padding: 80px 28%;
   padding-bottom: 0px ;
-
   min-height : 100vh;
 }
 main a
@@ -106,7 +102,6 @@ main .tagline{
 main .title{
   margin-top: 34vh;
 }
-
 
 /*--------------------------------------------------------------------------------*/
 
@@ -145,7 +140,6 @@ main .title{
   flex-basis : 400px ;
 }
 
-
 /*-------------------------------------------------------------------------------*/
 
 @media screen and (max-width:800px)
@@ -156,7 +150,6 @@ main .title{
     justify-content : center;
     flex-wrap: wrap;
     align-items : center;
-    /*width: 96.7vw;*/
   }
   .first_page header nav{
     justify-content : space-around ;
@@ -176,7 +169,6 @@ main .title{
     justify-content : center;
     flex-wrap: wrap;
     align-items : center;
-    /*width: 96.7vw;*/
   }
   #navbar header nav{
     justify-content: space-around;
@@ -196,7 +188,6 @@ main .title{
   .first_page header{
     padding-left : 10px;
     padding-right : 10px;
-    /*width: 95.1vw;*/
   }
   main .content .title,.tagline{
     font-size : 38px ;
@@ -208,23 +199,17 @@ main .title{
   #navbar header{
     padding-left : 10px;
     padding-right : 10px;
-    /*width: 95.1vw;*/
   }
 }
-
 
 /*------------------------MODAL-----------------------------------------------------*/
 
 .modal{
-  /*width: 45%;*/
   position: absolute;
   overflow: auto;
- /* left: 27.5%;*/
   right: 15%;
   left: 15%;
   z-index: 4 ;
-  /*top : -227vw;*/
-  /*top :-525px;*/
   opacity : 0;
   background-color: rgba(0,0,0,0.5) ;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
@@ -236,20 +221,21 @@ main .title{
 }
 
 .ico{
-  flex-basis : 40%;
+  flex-basis : 30%;
   font-size: 13px;
 }
+.ans{
+  flex-basis: 70% ;
+}
 .myform{
-    width: 45%;
+    width: 42%;
     background-color: #f7f7f7;
     padding: 28px;
     margin: 0;
 }
 .reservation{
-    width: 45%;
+    width: 42%;
     display: block;
-    /* padding: 28px; */
-    /*margin: 10px;*/
     padding-top: 0;
     margin: 0;
 }
@@ -265,19 +251,20 @@ main .title{
 .details{
   padding : 3px ;
 }
-.details div span{
-  flex-basis : 50%;
-}
-.ico{
-  /*min-width: 30% ;*/
-}
-.ico i{
+.fas{
   color: #7d7d7d ;
-  font-size: 18px ;
-  padding-right: 9px;
-      position: relative;
-    top: 4px;
+  font-size: 14px ;
+  padding-right: 7px;
 }
+.material-icons{
+  font-size: 17px ;
+  color: #7d7d7d ;
+  position: relative;
+  left: -2.5px;
+  top: 4px ;
+  padding-right: 3px;
+}
+
 .myform{
   margin-right: 7.5px ;
 }
@@ -286,13 +273,18 @@ main .title{
   margin-left: 7.5px ;
 }
 
+@media screen and (max-width:1200px)
+{
+  .ico{
+    flex-basis: 40%;
+  }
+  .ans{
+    flex-basis: 60%;
+  }
+}
 
 @media screen and (max-width: 1000px )
 {
-  .modal{
-    /*width : 50%;
-    left: 25% ;*/
-  }
   main{
     padding-left: 15% ;
     padding-right: 15% ;
@@ -319,7 +311,7 @@ main .title{
   .reservation div h6 {
     font-size: 13px;
   }
-  .details div .ans {
+  .ans {
     font-size: 14px;
   }
 }
@@ -329,7 +321,6 @@ main .title{
   .modal{
     width: 80% ;
     left :10%;
-    /*right: 20% ;*/
   }
   main{
     padding-left: 10% ;
@@ -341,8 +332,12 @@ main .title{
 {
   .modal{
     flex-wrap: wrap;
-    /*top:-1135px ;*/
-    /*top: -1138px;*/
+  }
+  .ico{
+    flex-basis: 40% ;
+  }
+  .ans{
+    flex-basis: 60%;
   }
   .myform{
     margin-right: 0 ;
@@ -359,20 +354,8 @@ main .title{
     margin-bottom: 15px;
   }
   .reservation{
-    flex-basis: 100%;
+    flex-basis: 89%;
     margin-left: 0
-  }
-}
-
-@media screen and (max-width: 600px)
-{
-  .modal{
-    /*width: 70% ;
-    left :15%;*/
-  }
-  main{
-  /*  padding-left: 15% ;
-    padding-right: 15% ;*/
   }
 }
 
@@ -381,34 +364,19 @@ main .title{
   #firstname, #lastname, #city, #post {
     flex-basis: 100%;
   }
-  .modal{
-    /*top: -640px ;*/
-  }
 }
-
-@media screen and (max-width: 470px)
-{
-  .modal{
-    /*top: -688px ;*/
-  }
-}
-
 
 /*--------------------------SECOND---PAGE---------------------------------------------------*/
 
 .second_page{
-	/*height: 64vh;*/
   padding-top : 80px;
   padding-bottom: 80px ;
-      padding-right: 15%;
-    padding-left: 20%;
+  padding-right: 15%;
+  padding-left: 20%;
   background-color: #fafafa ;
 }
 .cntnt_img img{
   max-width: 300px;
-  /*max-height: 445.688px;*/
-  /*width: auto;
-  height: auto;*/
   transform: rotate(20deg);
   transition : transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s  ;
 }
@@ -430,7 +398,6 @@ main .title{
   line-height: 1.5 ;
 }
 .cntnt{
-  /*text-align: center;*/
   margin-left: 74px;
 }
 
@@ -462,8 +429,8 @@ main .title{
 @media screen and (max-width: 550px)
 {
   .second_page{
-    padding-left  : 10% ;
-    padding-right : 10% ;
+  padding-left  : 10% ;
+  padding-right : 10% ;
   }
 }
 
@@ -476,8 +443,6 @@ main .title{
   .foto img{
     max-width : 200px ;
   }
-
-
 }
 
 @media screen and (max-width: 400px)
@@ -493,8 +458,6 @@ main .title{
     max-width : 100px ;
   }
 }
-
-
 
 /*-------------------------------------------------------------------------------*/
 
@@ -517,9 +480,6 @@ main .title{
   color : #f4f7e8;
 }
 
-
-
-
 /*------------------EDIT--------------------*/
 
 .second_page{
@@ -529,7 +489,7 @@ main .title{
 .modal{
   background : white ;
 }
-.reservation div{
-  padding: 5px;
-  padding-top: 0;
+/*.box{*/
+  padding-left: 3px;
+  padding-right: 3px;
 }

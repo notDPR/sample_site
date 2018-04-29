@@ -1,7 +1,6 @@
 .modal{
 	font-family: "Quicksand", serif;
   box-sizing : border-box ;
-  /*overflow-y:scroll; */
 }
 .formjs, .formjs-sm {
   font-family: "Quicksand", serif;
@@ -19,16 +18,9 @@ input{
   color : #d31a48 ;
   text-decoration: underline;
 }
-form div{
-/*   width : 100% ; */
-}
 .modal{
   margin : 0 auto ;
-  /*background-color : #f7f7f7 ;*/
   padding : 10px 15px ;
-}
-.myform{
-  /*margin: 10px;*/
 }
 .formjs-sm{
   border-radius : 4px !important ;
@@ -45,7 +37,6 @@ form div div{
 .formjs-sm{
   height: 29.3125px;
 }
-
 
 form{
   display : flex ;
@@ -80,30 +71,6 @@ form>*{
 
 /* --------------------------------- */
 
-/*@media screen and (max-width:974px)
-{
-  #firstname,#lastname,#city,#post{
-    flex-basis : 100% ;
-  }
-  .modal{
-    width : 50% ;
-  }
-}
-
-@media screen and (max-width:700px)
-{
-  .modal{
-    width : 60% ;
-  }
-}
-
-@media screen and (max-width:550px)
-{
-  .modal{
-    width : 70% ;
-  }
-}*/
-
 @media screen and (max-width:500px)
 {
   #firstname, #lastname, #city, #post {
@@ -111,10 +78,7 @@ form>*{
   }
 }
 
-
-
 /*--------------------------------------------------------*/
-
 
 #adder{
   outline: none ;
@@ -131,9 +95,6 @@ form>*{
   border: 1px solid #d31a48;
 }
 
-
-
-
 /*----------------------------------------------------------------*/
 
 .details{
@@ -146,11 +107,12 @@ form>*{
 {
   display: flex;
   flex-basis : 100% ;
-  align-items: flex-end;
+  align-items: baseline;
   padding-bottom: 10px;
+  padding-left: 0 ;
+  padding-right: 0 ;
 }
-
 .modal{
   display: inline-flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
