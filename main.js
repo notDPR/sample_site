@@ -56,7 +56,7 @@ $(document).ready(function(){
 
 	$(window).resize(function(){
 		y =  "-" + ( $(".modal").height() + 30 ) + "px"  ;
-		// $(".modal").css({"top" : y}) ;
+		$(".modal").css({"top" : y}) ;
 		// if( $(window).width() <= 500 ) y="-640px" ;
 		// if( $(window).width() <= 470 ) y="-688px" ;
 		// if( $(window).width() <=  700) y = "-1135px" ;
@@ -100,7 +100,4 @@ $(document).ready(function(){
 			$(".images").css( {top : $(window).scrollTop()} ) ;
 		}
 	}) ;
-
-
-
 });
