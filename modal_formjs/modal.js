@@ -46,7 +46,7 @@ $(document).ready(function(){
 			flag++ ;
 		}
 
-		// FOR SUCCESSFUL ACCOUNT CREATION
+		// ON SUCCESSFUL ACCOUNT CREATION
 		if(flag==8){
 			// $("#button").find("label").text("Account Created.") ;
 
@@ -55,15 +55,15 @@ $(document).ready(function(){
 			setTimeout(function(){
 				$(".modal").css({"top" : he , "opacity" : "0"}) ;
 				$(".first_page,.second_page").css({"filter" : "brightness(100%)"}) ;
-			},1000) ;
+			},700) ;
 
 			setTimeout(function(){
 				$(".flash_msg").fadeIn() ;
-			} , 1200) ;
+			} , 900) ;
 
 			setTimeout(function(){
 				$(".flash_msg").fadeOut("slow") ;
-			} , 1200 + 3000) ;
+			} , 900 + 3000) ;
 
 		}
 
