@@ -500,7 +500,6 @@ main .title{
 }
 
 #close{
-  /*position: relative;*/
   float: right;
   padding: 0;
   font-size: 17px;

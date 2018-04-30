@@ -55,15 +55,15 @@ $(document).ready(function(){
 			setTimeout(function(){
 				$(".modal").css({"top" : he , "opacity" : "0"}) ;
 				$(".first_page,.second_page").css({"filter" : "brightness(100%)"}) ;
-			},700) ;
+			},300) ;
 
 			setTimeout(function(){
 				$(".flash_msg").fadeIn() ;
-			} , 900) ;
+			} , 300 + 100) ;
 
 			setTimeout(function(){
 				$(".flash_msg").fadeOut("slow") ;
-			} , 900 + 3000) ;
+			} , 400 + 2500) ;
 
 		}
 

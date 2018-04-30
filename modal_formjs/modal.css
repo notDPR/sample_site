@@ -122,7 +122,7 @@ form>*{
 
 
 .flash_msg{
-  position : absolute;
+  position : fixed;
   z-index : 5 ;
   font-size: 16px;
   /*color: #690;*/
