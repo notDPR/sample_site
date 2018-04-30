@@ -48,13 +48,29 @@ $(document).ready(function(){
 
 		// FOR SUCCESSFUL ACCOUNT CREATION
 		if(flag==8){
-			$("#button").find("label").text("Account Created.") ;
+			// $("#button").find("label").text("Account Created.") ;
+
+			var he =  "-" + ( $(".modal").height() + 30 ) + "px" ;
+
+			setTimeout(function(){
+				$(".modal").css({"top" : he , "opacity" : "0"}) ;
+				$(".first_page,.second_page").css({"filter" : "brightness(100%)"}) ;
+			},1000) ;
+
+			setTimeout(function(){
+				$(".flash_msg").fadeIn() ;
+			} , 1200) ;
+
+			setTimeout(function(){
+				$(".flash_msg").fadeOut("slow") ;
+			} , 1200 + 3000) ;
+
 		}
+
 		else $("#button").find("label").text("") ;
 
 	}) ;
 }) ;
-
 
 function validateInput(i,val)
 {

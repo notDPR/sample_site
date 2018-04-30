@@ -116,3 +116,33 @@ form>*{
   display: inline-flex;
   justify-content: space-evenly;
 }
+
+
+
+
+
+.flash_msg{
+  position : absolute;
+  z-index : 5 ;
+  font-size: 16px;
+  /*color: #690;*/
+  font-weight: 700;
+  font-family: "Quicksand", serif;
+  color: #3c763d;
+  background-color: #dff0d8;
+   border-color: #d6e9c6;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    padding: 16px;
+    right: 70px ;
+    top: 80px ;
+    display: none ;
+    transition : display 2s linear 0s ;
+}
+
+@media screen and (max-width: 800px)
+{
+  .flash_msg{
+    top: 110px ;
+  }
+}

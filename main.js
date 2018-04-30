@@ -12,6 +12,7 @@ $(document).ready(function(){
 	var y =   "-" + ( $(".modal").height() + 30 ) + "px"  ;
 	$(".modal").css({"top":y}) ;
 
+
 // --------------TRIGGER EVENTS-------------------------
 
 	$(window).scroll(function(){
@@ -74,7 +75,7 @@ $(document).ready(function(){
 		}
 	}) ;
 
-	$(".second_page,#navbar,.first_page header").on("click",function(){
+	$(".second_page,#navbar,.first_page header,#close").on("click",function(){
 		$(".modal").css({"top" : y , "opacity" : "0"}) ;
 		$(".first_page,.second_page").css({"filter" : "brightness(100%)"}) ;
 	});
